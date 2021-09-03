@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "./App.css";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls, softShadows, Circle } from "@react-three/drei";
+import { OrbitControls, softShadows } from "@react-three/drei";
 
 softShadows();
 
@@ -53,9 +53,10 @@ function App() {
                     </mesh>
                 </group>
                 <Box />
-                <Circle position={[0, -2, 0]} />
+
                 <OrbitControls />
             </Canvas>
+            <h1>Welcome To My World</h1>
         </>
     );
 }

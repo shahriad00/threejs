@@ -12,5 +12,15 @@ body,
 }
 body {
     background: #f1f4f8;
-    position: fixed;
+    position: relative;
+}
+h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    mix-blend-mode: difference;
+    z-index: 99;
+    color: #000000;
 }
